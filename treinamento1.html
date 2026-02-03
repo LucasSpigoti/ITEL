@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Profetas Maiores</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+    <div class="logo-container">
+        <img src="logo.png" alt="ITEL" class="logo-img">
+    </div>
+</header>
+
+    <div class="training-container">
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div id="slide-wrapper">
+            <section class="slide active">
+                <span class="slide-count">Slide 1 / 17</span>
+                <h2>Início da Aula</h2>
+                 <img src="img/t1/slide1.png" alt="Ilustração" class="img-slide">
+            
+            </section>
+
+ <section class="slide">
+    <span class="slide-count">Slide 2 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide2.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+            <section class="slide">
+    <span class="slide-count">Slide 3 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide3.png" alt="Ilustração" class="img-slide">
+       
+</section>
+
+ <section class="slide">
+    <span class="slide-count">Slide 4 / 17</span>
+   <h2></h2>
+    <img src="img/t1/slide4.png" alt="Ilustração" class="img-slide">
+   
+</section>
+
+ <section class="slide">
+    <span class="slide-count">Slide 5 / 17</span>
+ <h2></h2>
+    <img src="img/t1/slide5.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+ <section class="slide">
+    <span class="slide-count">Slide 6 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide6.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+
+ <section class="slide">
+    <span class="slide-count">Slide 7 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide7.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+
+ <section class="slide">
+    <span class="slide-count">Slide 8 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide8.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+
+ <section class="slide">
+    <span class="slide-count">Slide 9 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide9.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+
+ <section class="slide">
+    <span class="slide-count">Slide 10 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide10.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+
+ <section class="slide">
+    <span class="slide-count">Slide 11 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide11.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+
+ <section class="slide">
+    <span class="slide-count">Slide 12 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide12.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+    <section class="slide">
+    <span class="slide-count">Slide 13 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide13.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+    <section class="slide">
+    <span class="slide-count">Slide 14 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide14.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+    <section class="slide">
+    <span class="slide-count">Slide 15 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide15.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+    <section class="slide">
+    <span class="slide-count">Slide 16 / 17</span>
+    <h2></h2>
+    <img src="img/t1/slide16.png" alt="Ilustração" class="img-slide">
+
+    </section>
+
+          <section class="slide">
+    <span class="slide-count">Final do Conteúdo</span>
+    <h2>Excelente progresso!</h2>
+    <p>Agora, vamos testar seus conhecimentos com um quiz rápido de 5 perguntas.</p>
+    <button class="btn-neon" onclick="startQuiz()">Começar Quiz</button>
+</section>
+
+<section id="quiz-container" class="slide" style="display: none;">
+    <h2 id="quiz-question">Pergunta aqui?</h2>
+    <div id="quiz-options" class="options-grid">
+        </div>
+    <p id="quiz-feedback" style="margin-top: 15px; font-weight: bold;"></p>
+</section>
+
+<section id="quiz-result" class="slide" style="display: none;">
+    <h2>Resultado do Quiz</h2>
+    <p id="score-text"></p>
+    <a href="home.html" class="btn-finish">Finalizar a Aula</a>
+</section>
+
+
+
+</div> <nav class="navigation">
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Próximo</button>
+    </nav>
+    
+</div> <script src="script.js"></script>
+
+    <script>
+    // Perguntas exclusivas do Treinamento 1
+    const meuQuiz = [
+    { q: "De acordo com o material da aula, por que Isaías, Jeremias, Ezequiel e Daniel são classificados como 'Profetas Maiores'?", options: ["Porque exerceram seu ministério por mais tempo.", "Devido ao volume e extensão dos seus textos escritos.", "Pelo fato de terem profetizado apenas para reis.", "Porque são hierarquicamente mais importantes que os outros."], correct: 1 },
+
+    { q: "No livro de Isaías, qual o significado do nome messiânico (Emanuel)?", options: ["Justiça do Senhor.", "Deus é minha força.", "Deus Conosco.", "Príncipe da Salvação."], correct: 2 },
+
+    { q: "Qual era a função principal de Ezequiel ao ser chamado de (atalaia)?", options: ["Reconstruir os muros físicos de Jerusalém.", "Liderar o exército de Israel contra os babilônios.", "Vigiar e advertir o povo sobre o julgamento e o pecado.", "Interpretar exclusivamente os sonhos de imperadores."], correct: 2 },
+
+
+    { q: "Qual é a mensagem central das profecias de Daniel sobre os reinos humanos?", options: ["A soberania absoluta de Deus sobre todos os reinos e tempos. ", "A superioridade militar perpétua da Babilônia.", "A necessidade de os judeus abandonarem sua fé no exílio.", "O fim imediato de todo o sofrimento terrestre."], correct: 0 },
+
+    { q: "Segundo Jeremias 1:5, em que momento ocorre a consagração do profeta por Deus?", options: ["Somente após ele atingir a maturidade.", "Quando ele decide aceitar o chamado voluntariamente.", "Logo após ele realizar seu primeiro milagre.", "Ainda no ventre materno, antes mesmo do nascimento."], correct: 3 }
+    ];
+</script>
+</body>
+</html>
